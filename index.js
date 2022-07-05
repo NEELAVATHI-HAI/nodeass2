@@ -2,10 +2,10 @@ const ex =require("express")
 const app=ex();
 app.get('/',function(req,res)
 {
-   
+    // res.send("hello");it will show error bcz it should be last
     res.json({name:"Neela"});
     //res.send("hello");
-    res.send("<h1>hello</h1>");
+    //res.send("<h1>hello</h1>");
 })
 app.get('/user1',function(req,res)
 {
